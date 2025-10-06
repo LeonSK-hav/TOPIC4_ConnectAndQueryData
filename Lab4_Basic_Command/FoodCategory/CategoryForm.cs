@@ -98,7 +98,7 @@ namespace Lab4_Basic_Command
                 MessageBox.Show("Vui lòng nhập đúng 'Thức uống' hoặc 'Đồ ăn'");
                 return;
             }
-            // 🟢 Truyền tham số
+            // Truyền tham số
             sqlCommand.Parameters.AddWithValue("@name", txtCategoryName.Text);
             sqlCommand.Parameters.AddWithValue("@type", typeValue);
             sqlCommand.Parameters.AddWithValue("@id", txtCategoryID.Text);

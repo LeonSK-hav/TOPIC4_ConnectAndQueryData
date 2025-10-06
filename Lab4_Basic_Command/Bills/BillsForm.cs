@@ -77,5 +77,7 @@ namespace Lab4_Basic_Command
             BillDetailsForm detailsForm = new BillDetailsForm(billID);
             detailsForm.ShowDialog();
         }
+
+        
     }
 }

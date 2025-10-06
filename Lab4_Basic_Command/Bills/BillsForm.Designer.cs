@@ -47,11 +47,16 @@
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.txtFinalAmount = new System.Windows.Forms.TextBox();
             this.txtDiscount = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBills)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvBills
             // 
+            this.dgvBills.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dgvBills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBills.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -63,11 +68,12 @@
             this.Status,
             this.CheckOutDate,
             this.Account});
-            this.dgvBills.Location = new System.Drawing.Point(245, 12);
+            this.dgvBills.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvBills.Location = new System.Drawing.Point(0, 0);
             this.dgvBills.Name = "dgvBills";
             this.dgvBills.RowHeadersWidth = 51;
             this.dgvBills.RowTemplate.Height = 24;
-            this.dgvBills.Size = new System.Drawing.Size(761, 421);
+            this.dgvBills.Size = new System.Drawing.Size(1336, 421);
             this.dgvBills.TabIndex = 0;
             this.dgvBills.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBills_CellContentClick);
             // 
@@ -145,98 +151,134 @@
             // 
             // dtpFromDate
             // 
-            this.dtpFromDate.Location = new System.Drawing.Point(26, 40);
+            this.dtpFromDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFromDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFromDate.Location = new System.Drawing.Point(47, 30);
             this.dtpFromDate.Name = "dtpFromDate";
-            this.dtpFromDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpFromDate.Size = new System.Drawing.Size(244, 27);
             this.dtpFromDate.TabIndex = 1;
             // 
             // dtpToDate
             // 
-            this.dtpToDate.Location = new System.Drawing.Point(26, 98);
+            this.dtpToDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpToDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpToDate.Location = new System.Drawing.Point(47, 82);
             this.dtpToDate.Name = "dtpToDate";
-            this.dtpToDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpToDate.Size = new System.Drawing.Size(244, 27);
             this.dtpToDate.TabIndex = 2;
             // 
             // btnFilter
             // 
+            this.btnFilter.BackColor = System.Drawing.Color.Maroon;
             this.btnFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilter.Location = new System.Drawing.Point(49, 162);
+            this.btnFilter.ForeColor = System.Drawing.Color.White;
+            this.btnFilter.Location = new System.Drawing.Point(84, 126);
             this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(141, 39);
+            this.btnFilter.Size = new System.Drawing.Size(168, 39);
             this.btnFilter.TabIndex = 3;
             this.btnFilter.Text = "Lọc";
-            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.UseVisualStyleBackColor = false;
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(75, 476);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(66, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 16);
+            this.label1.Size = new System.Drawing.Size(246, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Tổng số tiền chưa giảm giá";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(75, 528);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.Location = new System.Drawing.Point(66, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 16);
+            this.label2.Size = new System.Drawing.Size(198, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Tổng số tiền giảm giá";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(75, 580);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
+            this.label3.Location = new System.Drawing.Point(66, 140);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 16);
+            this.label3.Size = new System.Drawing.Size(89, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Thực thu";
             // 
             // txtTotalAmount
             // 
-            this.txtTotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalAmount.Location = new System.Drawing.Point(274, 470);
+            this.txtTotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalAmount.Location = new System.Drawing.Point(356, 31);
             this.txtTotalAmount.Name = "txtTotalAmount";
-            this.txtTotalAmount.Size = new System.Drawing.Size(372, 27);
+            this.txtTotalAmount.Size = new System.Drawing.Size(372, 30);
             this.txtTotalAmount.TabIndex = 7;
             // 
             // txtFinalAmount
             // 
-            this.txtFinalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFinalAmount.Location = new System.Drawing.Point(274, 574);
+            this.txtFinalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFinalAmount.Location = new System.Drawing.Point(356, 138);
             this.txtFinalAmount.Name = "txtFinalAmount";
-            this.txtFinalAmount.Size = new System.Drawing.Size(372, 27);
+            this.txtFinalAmount.Size = new System.Drawing.Size(372, 30);
             this.txtFinalAmount.TabIndex = 8;
             // 
             // txtDiscount
             // 
-            this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiscount.Location = new System.Drawing.Point(274, 522);
+            this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiscount.Location = new System.Drawing.Point(356, 82);
             this.txtDiscount.Name = "txtDiscount";
-            this.txtDiscount.Size = new System.Drawing.Size(372, 27);
+            this.txtDiscount.Size = new System.Drawing.Size(372, 30);
             this.txtDiscount.TabIndex = 9;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MistyRose;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtDiscount);
+            this.panel1.Controls.Add(this.txtFinalAmount);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtTotalAmount);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(430, 446);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(865, 211);
+            this.panel1.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.BackColor = System.Drawing.Color.MistyRose;
+            this.panel2.Controls.Add(this.dtpToDate);
+            this.panel2.Controls.Add(this.dtpFromDate);
+            this.panel2.Controls.Add(this.btnFilter);
+            this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel2.Location = new System.Drawing.Point(25, 446);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(347, 211);
+            this.panel2.TabIndex = 11;
             // 
             // BillsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1018, 669);
-            this.Controls.Add(this.txtDiscount);
-            this.Controls.Add(this.txtFinalAmount);
-            this.Controls.Add(this.txtTotalAmount);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnFilter);
-            this.Controls.Add(this.dtpToDate);
-            this.Controls.Add(this.dtpFromDate);
+            this.BackColor = System.Drawing.Color.Maroon;
+            this.ClientSize = new System.Drawing.Size(1336, 682);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvBills);
             this.Name = "BillsForm";
-            this.Text = "BillsForm";
+            this.Text = "Quản lý Bills";
             ((System.ComponentModel.ISupportInitialize)(this.dgvBills)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,5 +305,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn CheckOutDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Account;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

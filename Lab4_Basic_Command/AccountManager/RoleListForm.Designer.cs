@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoleListForm));
             this.dgvRolesList = new System.Windows.Forms.DataGridView();
             this.RoleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,6 +40,7 @@
             // 
             // dgvRolesList
             // 
+            this.dgvRolesList.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dgvRolesList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRolesList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.RoleID,
@@ -99,7 +101,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1017, 448);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1017, 463);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.dgvRolesList);
             this.Name = "RoleListForm";

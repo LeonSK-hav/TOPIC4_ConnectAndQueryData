@@ -335,5 +335,7 @@ namespace Lab4_Basic_Command
             InvoiceLogForm logForm = new InvoiceLogForm();
             logForm.ShowDialog();
         }
+
+        
     }
 }

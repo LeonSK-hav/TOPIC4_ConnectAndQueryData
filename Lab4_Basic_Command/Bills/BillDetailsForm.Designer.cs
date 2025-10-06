@@ -38,6 +38,7 @@
             // 
             // dgvBillDetails
             // 
+            this.dgvBillDetails.BackgroundColor = System.Drawing.Color.Maroon;
             this.dgvBillDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBillDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -87,10 +88,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1049, 530);
+            this.ClientSize = new System.Drawing.Size(1043, 428);
             this.Controls.Add(this.dgvBillDetails);
             this.Name = "BillDetailsForm";
-            this.Text = "BillDetailsForm";
+            this.Text = "Chi tiết hóa đơn";
             this.Load += new System.EventHandler(this.BillDetailsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBillDetails)).EndInit();
             this.ResumeLayout(false);
